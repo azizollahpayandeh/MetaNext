@@ -1,3 +1,15 @@
 body{
     font-family: "Vazir FD"
 }
+
+.vector2-opacity::before {
+    content: '';
+    background:url('./Images/Vector11.png');
+    opacity:0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }

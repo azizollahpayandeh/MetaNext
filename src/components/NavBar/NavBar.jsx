@@ -49,7 +49,7 @@ export default function NavBar() {
             <p className="text-sm text-white mr-[5px]">دمو رایگان</p>
           </button>
 
-          <div className="language flex gap-1   ">
+          <div className="language flex gap-1 cursor-pointer  ">
           <select name="" id="" className="text-lg">
             </select>
             <p className="text-lg ">En</p>
