@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
 const ProgressBar = () => {
-  const [progress, setProgress] = useState(50);
+  const [progress, setProgress] = useState(30);
 
 
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold">Progress Bar Example</h1>
-      <div className="w-full bg-gray-200">
-        <div className="h-4 bg-blue-500" style={{ width: `${progress}%` }}></div>
+    <div className="mt-[15px]">
+      <div className="w-[200px] bg-gray-200 rounded-3xl">
+        <div className="h-[7px]  bg-green-500 rounded-3xl " style={{ width: `${progress}%` }}></div>
       </div>
 
     </div>

@@ -5,6 +5,7 @@ import VideoSection from '../../components/VideoSection/VideoSection'
 import Proses from '../../components/Proses/Proses'
 import Goal from '../../components/Goal/Goal'
 import Service from '../../components/Services/Service'
+import Where from '../../components/Where/Where'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <Proses/>
     <Goal/>
     <Service/>
+    <Where/>
     </>
   )
 }

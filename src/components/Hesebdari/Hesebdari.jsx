@@ -23,7 +23,7 @@ export default function Hesebdari() {
       ];
   return (
     <>
-      <div className="system flex justify-between mt-[100px]">
+      <div className="system flex justify-between mt-[100px] mr-[50px]">
                 <div className="w-[620px] h-[370px]">
                   <h1 className="text-[40px] font-semibold mb-[20px]">
                     سیستم حسابداری متانکست
@@ -67,11 +67,11 @@ export default function Hesebdari() {
                 </div>
               </div>
 
-              <div className="Why w-[620px] h-[350px] ">
+              <div className="Why w-[620px] h-[350px] mr-[50px] ">
                 <h1 className="text-[34px] font-semibold mb-[20px]">
                   چرا باید از سیستم متانکست استفاده کنیم
                 </h1>
-                <p className="text-[18px] text-[#626E94] leading-[45px]">
+                <p className="text-[18px] text-[#626E94] leading-[45px] opacity-80">
                   ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت
                   بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس
                   میتواند به سرعت بخشیدن امور مالی به مجموعه ها برای رونق گرفتن
@@ -84,7 +84,7 @@ export default function Hesebdari() {
                   <h1 className="text-[34px] font-semibold mb-[20px]">
                     امکانات موجود در سیستم حسابداری
                   </h1>
-                  <p className="text-[18px] text-[#626E94] leading-[45px]">
+                  <p className="text-[18px] text-[#626E94] leading-[45px] opacity-80">
                     سیستم کامل مالی، سیستم کامل خزانه ، و سیستم کامل انبار که
                     شامل ثبت چک ها ، ثبت فاکتور های خرید و فروش ، نگهداری سوابق
                     خرید و فروش ، نگهداری سوابق مشتری ، حساب های بانکی و صندوق ،
