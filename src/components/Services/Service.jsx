@@ -4,7 +4,7 @@ import Power from "../Power/Power";
 import Conversation from "../Conversation/Conversation";
 import Application from "../Application/Application";
 import Site from "../Site/Site";
-// import { Swiper, SwiperSlide } from "swiper/react";d
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ProgressBar from "../ProgressBar/ProgressBar";
 

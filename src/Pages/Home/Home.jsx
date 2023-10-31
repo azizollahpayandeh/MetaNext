@@ -6,7 +6,12 @@ import Proses from '../../components/Proses/Proses'
 import Goal from '../../components/Goal/Goal'
 import Service from '../../components/Services/Service'
 import Where from '../../components/Where/Where'
-
+import AboutMetaNext from '../../components/AboutMetaNext/AboutMetaNext'
+import Custumor from '../../components/Customer/custumor'
+import Blog from '../../components/Blogs/Blog'
+import Concat from '../../components/Concat/Concat'
+import CallUS from '../../components/CallUs/CallUS'
+import Footer from '../../components/Footer/Footer'
 export default function Home() {
   return (
     <>
@@ -17,6 +22,12 @@ export default function Home() {
     <Goal/>
     <Service/>
     <Where/>
+    <AboutMetaNext/>
+    <Custumor/>
+    <Blog/>
+    <Concat/>
+    <CallUS/>
+    <Footer/>
     </>
   )
 }
