@@ -12,7 +12,7 @@ export default function VideoSection() {
           key={index}
           src={image.src}
           alt={image.alt}
-          className="w-[154px] h-[181px] absolute hover:scale-[1.2] cursor-pointer transition-all duration-700"
+          className="w-[154px] h-[181px] absolute  cursor-pointer transition-all duration-700"
           style={{ top: image.top, right: image.right }}
         />
       ))}

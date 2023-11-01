@@ -1,18 +1,41 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const ProgressBar = () => {
-  const [progress, setProgress] = useState(30);
+export default function ProgressBar({
+  duration,
+  selectedIdx,
+  idx,
+}) {
+  const [progress, setProgress] = useState(0);
 
+  useEffect(() => {
+    let interval;
+    let startTime;
+    let elapsedTime = 0;
 
+    if (selectedIdx === idx) {
+      startTime = Date.now();
+      interval = setInterval(() => {
+        elapsedTime = Date.now() - (startTime || 0);
+        setProgress((elapsedTime / duration) * 100);
+
+        if (elapsedTime >= duration) {
+          clearInterval(interval);
+        }
+      }, 50);
+    }
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [selectedIdx, idx, duration]);
+
+  useEffect(() => {
+    setProgress(0);
+  }, [selectedIdx]);
 
   return (
-    <div className="mt-[15px]">
-      <div className="w-[200px] bg-gray-200 rounded-3xl">
-        <div className="h-[7px]  bg-green-500 rounded-3xl " style={{ width: `${progress}%` }}></div>
-      </div>
-
+    <div className="progress-bar">
+      <div className="progress" style={{ width: `${progress}%` }}></div>
     </div>
   );
-};
-
-export default ProgressBar;
+}

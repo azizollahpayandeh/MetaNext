@@ -7,9 +7,9 @@ export default function   Goal() {
       <div className="all">
         <div className="vector2-opacity mb-[150px] relative mx-auto w-[555px] h-[718px] rounded-[120px] bg-[#0CA0A2]   mt-[100px] flex flex-col gap-10 items-center justify-center">
           <div className="">
-            <h1 className="text-white text-[44px] text-center mb-[25px]">هدف ما در متانکست</h1>
+            <h1 className="text-white text-[46px] text-center font-[800] mb-[25px]">هدف ما در متانکست</h1>
             <img src="./Images/Group.png" alt="" className="mx-auto mb-[35px] reduced-opacity" />
-            <p className="w-[460px] h-[410px] text-center text-white leading-[45px] opacity-90">
+            <p className="w-[460px] h-[410px] text-center text-white leading-[45px] text-[18px] font-[400] opacity-90 ">
               یک استراتژی در پروسه ی بازاریابی کسب وکار است که تمام نظام و
               فعالیت های موجود در سازمان را حول محور مشتری یکپارچه میسازد.در این
               نرم افزار شما به عنوان مدیر فروش میتوانید با برنامه ریزی و زمان

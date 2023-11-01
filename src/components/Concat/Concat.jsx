@@ -18,10 +18,10 @@ export default function Concat() {
                 className="w-[50px] h-[50px] mr-[20px]"
               />
               <div className="titleTextConcat mr-[20px]">
-                <p className="text-[16px] text-[#626E94]">
+                <p className="text-[16px] font-[300] text-[#626E94]">
                   همراه شما هستیم برای یک شروع تازه
                 </p>
-                <h1 className="text-[34px] font-bold  mt-[10px]">
+                <h1 className="text-[34px] font-[700]  mt-[10px]">
                   دریافت <span className="text-[#0CA0A2]">مشاوره رایگان</span>
                 </h1>
               </div>
@@ -31,20 +31,20 @@ export default function Concat() {
                 size="large"
                 placeholder="نام و نام حانوادگی"
                 // prefix={<UserOutlined />}
-                className="w-[480px] h-[55px]"
+                className="w-[480px] h-[55px] text-[17px] font-[400] text-[#1E385F]"
               />
               <br />
               <br />
               <Input
                 placeholder="شماره تماس"
                 size="large"
-                className="w-[480px] h-[55px]"
+                className="w-[480px] h-[55px] text-[17px] font-[400] text-[#1E385F]"
               />
               <br />
               <br />
               <Input
                 size="large"
-                className="w-[480px] h-[55px]"
+                className="w-[480px] h-[55px] text-[17px] font-[400] text-[#1E385F]"
                 placeholder="نام شرکت"
                 // prefix={<UserOutlined />}
               />
@@ -53,15 +53,14 @@ export default function Concat() {
               <TextArea
                 placeholder="موضوع "
                 autoSize={{ minRows: 5  , maxRows: 7 }}
-                className="w-[480px]"
+                className="w-[480px] text-[17px] font-[400] text-[#1E385F]"
               />
             </div>
             <div className="flex justify-center">
                             <button className="flex  shadow-xl bg-[#0CA0A2] rounded-[10px] w-[480px] h-[56px] items-center justify-center ">
-              <p className="text-sm text-white mr-[5px]">دریافت مشاوره </p>
+              <p className="text-[15px] font-[500] text-white mr-[5px] ">دریافت مشاوره </p>
             </button>
             </div>
-
           </div>
         </div>
       </div>

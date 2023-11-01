@@ -25,10 +25,10 @@ export default function Hesebdari() {
     <>
       <div className="system flex justify-between mt-[100px] mr-[50px]">
                 <div className="w-[620px] h-[370px]">
-                  <h1 className="text-[40px] font-semibold mb-[20px]">
+                  <h1 className="text-[40px] font-[800] mb-[20px]">
                     سیستم حسابداری متانکست
                   </h1>
-                  <p className="text-[18px] text-[#626E94] leading-[45px]">
+                  <p className="text-[18px] text-[#626E94] leading-[45px] font-[400]">
                     ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با
                     سرعت بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس
                     میتواند به سرعت بخشیدن امور مالی به مجموعه ها برای رونق
@@ -42,7 +42,7 @@ export default function Hesebdari() {
                     />
                     <div className="flex gap-[100px] ">
                       <div className="flex flex-col gap-2 ">
-                        <h1 className="text-[#0CA0A2]  text-[30px] font-semibold">
+                        <h1 className="text-[#0CA0A2]  text-[30px] font-[800]">
                           450+
                         </h1>
                         <p className="text-[#0CA0A2] text-[14px]">خرید محصول</p>
@@ -51,7 +51,7 @@ export default function Hesebdari() {
                       <div className="flex flex-col gap-2">
                         <h1 className="text-[#011627] text-[30px] font-semibold">
                           320+
-                        </h1>
+                        </h1> 
                         <p className="text-[14px]">کاربر فعال</p>
                       </div>
                     </div>
@@ -68,10 +68,10 @@ export default function Hesebdari() {
               </div>
 
               <div className="Why w-[620px] h-[350px] mr-[50px] ">
-                <h1 className="text-[34px] font-semibold mb-[20px]">
+                <h1 className="text-[34px] font-[700] mb-[20px]">
                   چرا باید از سیستم متانکست استفاده کنیم
                 </h1>
-                <p className="text-[18px] text-[#626E94] leading-[45px] opacity-80">
+                <p className="text-[18px] text-[#626E94] font-[400] leading-[45px]">
                   ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت
                   بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس
                   میتواند به سرعت بخشیدن امور مالی به مجموعه ها برای رونق گرفتن
@@ -81,10 +81,10 @@ export default function Hesebdari() {
 
               <div className="alll flex justify-around">
                 <div className="Why w-[620px] h-[370px]  ">
-                  <h1 className="text-[34px] font-semibold mb-[20px]">
+                  <h1 className="text-[34px] font-[700] mb-[20px]">
                     امکانات موجود در سیستم حسابداری
                   </h1>
-                  <p className="text-[18px] text-[#626E94] leading-[45px] opacity-80">
+                  <p className="text-[18px] text-[#626E94] leading-[45px] font-[400]">
                     سیستم کامل مالی، سیستم کامل خزانه ، و سیستم کامل انبار که
                     شامل ثبت چک ها ، ثبت فاکتور های خرید و فروش ، نگهداری سوابق
                     خرید و فروش ، نگهداری سوابق مشتری ، حساب های بانکی و صندوق ،
@@ -92,12 +92,12 @@ export default function Hesebdari() {
                     نامه ، اتصال به دستگاه پوز ، ثبت فاکتور های درامد و هزینه
                     میشوند.
                   </p>
-                  <button className="w-[220px] h-[63px] mt-[25px] bg-[#0CA0A2]   hover:scale-[1.1] transition-all duration-700 rounded-[10px] text-white flex justify-center items-center text-opacity-90 ">
+                  <button className="w-[220px] h-[63px] mt-[25px] bg-[#0CA0A2]    rounded-[10px] text-white flex justify-center items-center text-[18px] font-[500] ">
                     اطلاعات بیشتر{" "}
                     <img
                       src="./Images/arrow-left.png"
                       alt=""
-                      className="w-[19px]  mt-[5px] mr-[5px]"
+                      className="w-[23px]  mt-[5px] mr-[5px]"
                     />
                   </button>
                 </div>
@@ -114,7 +114,7 @@ export default function Hesebdari() {
                       key={index}
                       src={image.src}
                       alt={image.alt}
-                      className="w-[154px] h-[181px] absolute hover:scale-[1.2] cursor-pointer transition-all duration-700"
+                      className="w-[154px] h-[181px] absolute  cursor-pointer transition-all duration-700"
                       style={{ top: image.top, right: image.right }}
                     />
                   ))}

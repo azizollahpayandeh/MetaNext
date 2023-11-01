@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Autoplay, Pagination } from "swiper/modules";
+import BlogSlideCompo from "../BlogSlidCompo/BlogSlideCompo";
 
 import { Navigation } from "swiper/modules";
 
@@ -11,80 +12,112 @@ import "swiper/css/navigation";
 
 export default function Blog() {
   const swiperRef = useRef(null);
+  const [isBlock, setIsBlock] = useState("");
 
   return (
     <>
       <div className="all">
         <div className="again all">
-          <div className="header flex items-end  mt-[100px]  mr-[50px] justify-between ml-[50px]">
+          <div className="header flex items-end  mt-[80px]  mr-[50px] justify-between ml-[50px]">
             <div className="text">
-              <p className="text-[18px] opacity-80  text-[#626E94] ">با شما در مسیر یادگیری هستیم</p>
-              <h1 className="text-[40px] font-bold text-[#000000]">جدیدترین <span className="text-[#0CA0A2]">مقالات</span></h1>
+              <p className="text-[18px] font-[300] text-[#626E94] ">
+                با شما در مسیر یادگیری هستیم
+              </p>
+              <h1 className="text-[40px] font-[700] text-[#000000]">
+                جدیدترین <span className="text-[#0CA0A2]">مقالات</span>
+              </h1>
             </div>
-            <div className="buttons flex gap-6">
+            <div className="buttons flex gap-6 items-center">
               <img
-                src="./Images/Frame 70154.png "
+                src={
+                  isBlock === "right"
+                    ? "./Images/Frame 70153.png"
+                    : "./Images/Frame 70154.png"
+                }
                 alt=""
-                onClick={() => swiperRef.current.slidePrev()}
-                className="prevEl w-[50px] h-[50px]"
+                onClick={() => {
+                  setIsBlock("right");
+                }}
+                className={`prevEl w-[50px] h-[50px] cursor-pointer ${
+                  isBlock === "right" ? "rotate-180" : ""
+                }`}
               />
-
-              {/*  */}
+              <img src="./Images/Ellipse 389.png" alt="" className="h-[10px]" />
               <img
-                src="./Images/Frame 70154.png"
+                src={
+                  isBlock === "left"
+                    ? "./Images/Frame 70153.png"
+                    : "./Images/Frame 70154.png"
+                }
                 alt=""
-                onClick={() => swiperRef.current.slideNext()}
-                className="nextEl rotate-180 w-[50px] h-[50px]"
+                onClick={() => {
+                  setIsBlock("left");
+                }}
+                className={` ${
+                  isBlock === "left" ? "" : "rotate-180"
+                } nextEl  w-[50px] h-[50px]  cursor-pointer`}
               />
+            </div>
           </div>
-            </div>
 
-            <div className="slider">
-              <Swiper
-                ref={swiperRef}
-                navigation={{
-                  prevEl: ".prevEl",
-                  nextEl: ".nextEl",
-                }}
-                pagination={{
-                  clickable: true,
-                  enabled: true,
-                }}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: true,
-                }}
-                modules={[Navigation, Autoplay, Pagination]}
-                className="mySwiper"
-                spaceBetween={30}
-                slidesPerView={3}
-                loop={true}
-              >
-                <SwiperSlide>
-                  <img src="./Images/Group 70183.png" alt="" />
-                </SwiperSlide>
+          <div className="slider mt-[60px] mr-[50px]">
+            <Swiper
+              ref={swiperRef}
+              navigation={{
+                prevEl: ".prevEl",
+                nextEl: ".nextEl",
+              }}
+              // pagination={{
+              //   clickable: true,
+              //   enabled: true,
+              // }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: true,
+              }}
+              modules={[Navigation, Autoplay, Pagination]}
+              className="mySwiper"
+              spaceBetween={30}
+              slidesPerView={3}
+              loop={true}
+            >
+              <SwiperSlide>
+                <div className="boxSlide">
+                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194.png" />
+                </div>
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src="./Images/Group 70183.png" alt="" />
-                </SwiperSlide>
+              <SwiperSlide>
+                <div className="boxSlide">
+                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (1).png" />
+                </div>{" "}
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src="./Images/Group 70183.png" alt="" />
-                </SwiperSlide>
+              <SwiperSlide>
+                <div className="boxSlide">
+                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (2).png" />
+                </div>{" "}
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src="./Images/Group 70183.png" alt="" />
-                </SwiperSlide>
+              <SwiperSlide>
+                <div className="boxSlide">
+                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194.png" />
+                </div>{" "}
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src="./Images/Group 70183.png" alt="" />
-                </SwiperSlide>
+              <SwiperSlide>
+                <div className="boxSlide">
+                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (1).png" />
+                </div>{" "}
+              </SwiperSlide>
 
-                <SwiperSlide>
-                  <img src="./Images/Group 70183.png" alt="" />
-                </SwiperSlide>
-              </Swiper>
-            </div>
+              <SwiperSlide>
+                <div className="boxSlide">  
+                  <BlogSlideCompo  srcImgBase="./Images/Rectangle 9194 (2).png"/>
+                </div>{" "}
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </>

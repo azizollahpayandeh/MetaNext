@@ -9,18 +9,18 @@ export default function Main() {
 
           <div className="Main flex flex-col ">
             <div className="flex justify-center ">
-                <p className="text-[24px] opacity-70">سیستم</p>
-                <p className="text-[24px] font-semibold">
+                <p className="text-[26px] font-[400] text-[#7E8AAB]">سیستم</p>
+                <p className="text-[26px]  font-[400] opacity-90">
                     CRM
                 </p>
-                <h1 className="text-[24px] opacity-70">متانکست</h1>
+                <h1 className="text-[26px] font-[400] text-[#7E8AAB]">متانکست</h1>
 
             </div>
             <div className="big mt-[18px]">
-              <h1 className="text-[46px] font-bold" >یک پلتفرم برای تمامی نیاز ها کسب و کار</h1>
+              <h1 className="text-[46px] font-[800]" >یک پلتفرم برای تمامی نیاز ها کسب و کار</h1>
             </div>
 
-            <p className="opacity-60 w-[1212px] h-[120px] text-[17px] leading-[35px] mt-[30px] ">
+            <p className="text-[#7E8AAB] w-[1212px] font-[300] h-[120px] text-[18px] leading-[35px] mt-[30px] ">
               سی ار ام یک سیستم نرم افزاری است که به صاحبان کسب و کار کمک میکند
               تا به راحتی تمام ارتباطات را ردیابی کند و روابط را با سرنخ ها وت
               مشتریان خود تقویت کند.سی ار ام جایگزین تعداد زیادی از صفحات گسترده
@@ -32,7 +32,7 @@ export default function Main() {
 
           <div className="btn mt-[50px] flex items-center">
             <img src="./Images/Vector 33.png" alt=""  className="w-[150px] h-[12px] ml-[20px]"/>
-            <button className="w-[257px] h-[67px] bg-[#011627]   hover:scale-[1.1] transition-all duration-700 rounded-[10px] text-white flex justify-center items-center text-opacity-90 ">رایگان شروع کنید<img src="./Images/arrow-left.png" alt="" className="w-[19px]  mt-[5px] mr-[5px]" /></button>
+            <button className="w-[257px] h-[67px] bg-[#011627] transition-all duration-700 rounded-[10px] text-[18px] text-[#FFFFFF]  flex justify-center items-center font-[500] ">رایگان شروع کنید<img src="./Images/arrow-left.png" alt="" className="w-[24px]   mt-[3px] mr-[5px]" /></button>
             <img src="./Images/Vector 32 (1).png" alt="" className="w-[150px] h-[12px] mr-[20px]" />
             
           </div>
