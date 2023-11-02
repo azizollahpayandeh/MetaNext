@@ -86,7 +86,13 @@ export default function ServicesContainer() {
                 src={selected === idx ? ele.image2 : ele.image1}
                 alt=""
               />
-              <p className={` ${selected === idx ? "font-[700] " : "text-[#7E8AAB]"} my-[15px] text-[20px] `}>{ele.text}</p>
+              <p
+                className={` ${
+                  selected === idx ? "font-[700] " : "text-[#7E8AAB]"
+                } my-[15px] text-[20px] `}
+              >
+                {ele.text}
+              </p>
               <ProgressBar
                 duration={duration}
                 selectedIdx={selected}
@@ -100,25 +106,25 @@ export default function ServicesContainer() {
       <div className="p-10 flex items-center justify-between bg-[#F5F8C] mb-[30px] flex-row-reverse">
         <div className="swiper-container overflow-hidden" ref={swiperElRef}>
           <div className="swiper-wrapper">
-          <div className="swiper-slide">
+            <div className="swiper-slide">
               <Hesebdari />
             </div>
-              <div className="swiper-slide">
+            <div className="swiper-slide">
               <Hesebdari />
             </div>
             <div className="swiper-slide">
               <Power />
             </div>
             <div className="swiper-slide">
-              <Conversation/>
+              <Conversation />
             </div>
             <div className="swiper-slide">
-              <Application/>
+              <Application />
             </div>
             <div className="swiper-slide">
-              <Site/>
+              <Site />
             </div>
-              </div>
+          </div>
         </div>
       </div>
     </div>

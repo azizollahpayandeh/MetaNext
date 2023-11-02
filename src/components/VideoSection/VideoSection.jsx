@@ -1,11 +1,9 @@
 import React from "react";
 import imageList from "../../data";
 
-
 export default function VideoSection() {
   return (
     <div className="all relative mx-auto w-[685px] h-[480px] ">
-      
       <img src="./Images/Group 34778.png" alt="" className="" />
 
       {imageList.map((image, index) => (

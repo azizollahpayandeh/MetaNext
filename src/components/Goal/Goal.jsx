@@ -1,19 +1,41 @@
 import React from "react";
 import Options from "../Options/Options";
 
-export default function   Goal() {
+export default function Goal() {
   return (
     <>
       <div className="all relative">
-      <img src="./Images/Ellipse 399.png" alt="" className="absolute top-[150px] right-[10px] w-[522px] h-[522]" />
-      <img src="./Images/Ellipse 399.png" alt="" className="absolute top-[150px] right-[850px] w-[522px] h-[522]" />
-      <img src="./Images/Ellipse 372.png" alt="" className="absolute top-[250px] right-[1100px] " />
-      <img src="./Images/Polygon 7.png" alt="" className="absolute top-[650px] right-[270px]" />
+        <img
+          src="./Images/Ellipse 399.png"
+          alt=""
+          className="absolute top-[150px] right-[10px] w-[522px] h-[522]"
+        />
+        <img
+          src="./Images/Ellipse 399.png"
+          alt=""
+          className="absolute top-[150px] right-[850px] w-[522px] h-[522]"
+        />
+        <img
+          src="./Images/Ellipse 372.png"
+          alt=""
+          className="absolute top-[250px] right-[1100px] "
+        />
+        <img
+          src="./Images/Polygon 7.png"
+          alt=""
+          className="absolute top-[650px] right-[270px]"
+        />
 
         <div className="vector2-opacity mb-[150px] relative mx-auto w-[555px] h-[718px] rounded-[120px] bg-[#0CA0A2]   mt-[100px] flex flex-col gap-10 items-center justify-center">
           <div className="">
-            <h1 className="text-white text-[46px] text-center font-[800] mb-[25px]">هدف ما در متانکست</h1>
-            <img src="./Images/Group.png" alt="" className="mx-auto mb-[35px] reduced-opacity" />
+            <h1 className="text-white text-[46px] text-center font-[800] mb-[25px]">
+              هدف ما در متانکست
+            </h1>
+            <img
+              src="./Images/Group.png"
+              alt=""
+              className="mx-auto mb-[35px] reduced-opacity"
+            />
             <p className="w-[460px] h-[410px] text-center text-white leading-[45px] text-[18px] font-[400] opacity-90 ">
               یک استراتژی در پروسه ی بازاریابی کسب وکار است که تمام نظام و
               فعالیت های موجود در سازمان را حول محور مشتری یکپارچه میسازد.در این

@@ -17,8 +17,16 @@ export default function Blog() {
   return (
     <>
       <div className="all relative">
-      <img src="./Images/Group 70194.png" alt="" className="absolute top-[-10px] right-[600px]" />
-      <img src="./Images/Ellipse 391.png" alt="" className="absolute top-[-20px]  right-[1000px]" />
+        <img
+          src="./Images/Group 70194.png"
+          alt=""
+          className="absolute top-[-10px] right-[600px]"
+        />
+        <img
+          src="./Images/Ellipse 391.png"
+          alt=""
+          className="absolute top-[-20px]  right-[1000px]"
+        />
         <div className="again all">
           <div className="header flex items-end  mt-[80px]  mr-[50px] justify-between ml-[50px]">
             <div className="text">
@@ -114,8 +122,8 @@ export default function Blog() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="boxSlide">  
-                  <BlogSlideCompo  srcImgBase="./Images/Rectangle 9194 (2).png"/>
+                <div className="boxSlide">
+                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (2).png" />
                 </div>{" "}
               </SwiperSlide>
             </Swiper>

@@ -21,10 +21,26 @@ export default function Footer() {
             </div>
 
             <div className="left flex gap-10 ">
-              <img src="./Images/Group 70195.png" alt="" className="h-[80px]  cursor-pointer" />
-              <img src="./Images/Group 70196.png" alt="" className="h-[80px]  cursor-pointer" />
-              <img src="./Images/Group 70197.png" alt="" className="h-[80px]  cursor-pointer" />
-              <img src="./Images/Group 70198.png" alt="" className="h-[80px]  cursor-pointer" />
+              <img
+                src="./Images/Group 70195.png"
+                alt=""
+                className="h-[80px]  cursor-pointer"
+              />
+              <img
+                src="./Images/Group 70196.png"
+                alt=""
+                className="h-[80px]  cursor-pointer"
+              />
+              <img
+                src="./Images/Group 70197.png"
+                alt=""
+                className="h-[80px]  cursor-pointer"
+              />
+              <img
+                src="./Images/Group 70198.png"
+                alt=""
+                className="h-[80px]  cursor-pointer"
+              />
             </div>
           </div>
 
@@ -43,9 +59,18 @@ export default function Footer() {
                   صفحه اصلی{" "}
                 </p>
               </div>
-              <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer"> قیمت ها</p>
-              <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer"> خدمات</p>
-              <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer"> بلاگ</p>
+              <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer">
+                {" "}
+                قیمت ها
+              </p>
+              <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer">
+                {" "}
+                خدمات
+              </p>
+              <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer">
+                {" "}
+                بلاگ
+              </p>
               <p className="text-[#7E8AAB] font-[500] text-[16px] cursor-pointer">
                 {" "}
                 درباره ما
@@ -116,15 +141,26 @@ export default function Footer() {
                 راه های ارتباطی
               </h1>
               <div className="flex gap-4">
-                <img src="./Images/location33.png" alt=""  className="h-[18px] w-[18px]" />
-                <p className="text-[#7E8AAB] font-[400] text-[15px] mr-[-8px] cursor-pointer"> آدرس</p>
+                <img
+                  src="./Images/location33.png"
+                  alt=""
+                  className="h-[18px] w-[18px]"
+                />
+                <p className="text-[#7E8AAB] font-[400] text-[15px] mr-[-8px] cursor-pointer">
+                  {" "}
+                  آدرس
+                </p>
               </div>
               <p className=" text-[16px]  font-[400] text-[#011627] cursor-pointer">
                 {" "}
                 مشهد بابانظر 77 ، عزیزی 3، پلاک 8
               </p>
               <div className="flex gap-4">
-                <img src="./Images/Calling11.png" alt="" className="h-[18px] w-[18px]" />
+                <img
+                  src="./Images/Calling11.png"
+                  alt=""
+                  className="h-[18px] w-[18px]"
+                />
                 <p className="text-[#7E8AAB] font-[400] text-[15px] mr-[-8px] cursor-pointer">
                   {" "}
                   شماره تماس{" "}
@@ -144,7 +180,9 @@ export default function Footer() {
                     {" "}
                     ایمیل{" "}
                   </p>
-                  <p className="font-[700] text-[14px] cursor-pointer">Metanext.com</p>
+                  <p className="font-[700] text-[14px] cursor-pointer">
+                    Metanext.com
+                  </p>
                 </div>
               </div>
             </div>

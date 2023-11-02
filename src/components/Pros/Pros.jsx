@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Pros({parag, title, srcpic}) {
+export default function Pros({ parag, title, srcpic }) {
   return (
     <>
       <div className="all">
@@ -9,7 +9,7 @@ export default function Pros({parag, title, srcpic}) {
           <div className="Text ">
             <h1 className="text-[26px] font-[700]">{title}</h1>
             <p className="text-[16px] mt-[15px] text-[#626E94] w-[360px] font-[400]">
-                {parag}
+              {parag}
             </p>
           </div>
         </div>

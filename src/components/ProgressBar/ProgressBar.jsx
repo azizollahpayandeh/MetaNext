@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function ProgressBar({
-  duration,
-  selectedIdx,
-  idx,
-}) {
+export default function ProgressBar({ duration, selectedIdx, idx }) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {

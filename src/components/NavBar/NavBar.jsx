@@ -4,14 +4,46 @@ export default function NavBar() {
   return (
     <>
       <div className="allNavBar  relative  ">
-          <img src="./Images/Vector 31.png" alt=""  className="absolute top-[60px] right-[370px]"/>
-          <img src="./Images/Group 34771.png" alt="" className="absolute top-[180px] right-[0]" />
-          <img src="./Images/Ellipse 361.png" alt="" className="absolute top-[100px] right-[1360px] w-[8px]" />
-          <img src="./Images/Ellipse 361.png" alt="" className="absolute top-[130px] right-[400px]" />
-          <img src="./Images/Ellipse 362.png" alt="" className="absolute top-[250px] right-[170px]" />
-          <img src="./Images/Ellipse 363.png" alt="" className="absolute top-[160px] right-[1150px]" />
-          <img src="./Images/Vector22.png" alt="" className="absolute top-[310px] right-[1320px]" />
-          <img src="./Images/Vector33.png" alt="" className="absolute top-[400px] w-[190px] right-[590px]" />
+        <img
+          src="./Images/Vector 31.png"
+          alt=""
+          className="absolute top-[60px] right-[370px]"
+        />
+        <img
+          src="./Images/Group 34771.png"
+          alt=""
+          className="absolute top-[180px] right-[0]"
+        />
+        <img
+          src="./Images/Ellipse 361.png"
+          alt=""
+          className="absolute top-[100px] right-[1360px] w-[8px]"
+        />
+        <img
+          src="./Images/Ellipse 361.png"
+          alt=""
+          className="absolute top-[130px] right-[400px]"
+        />
+        <img
+          src="./Images/Ellipse 362.png"
+          alt=""
+          className="absolute top-[250px] right-[170px]"
+        />
+        <img
+          src="./Images/Ellipse 363.png"
+          alt=""
+          className="absolute top-[160px] right-[1150px]"
+        />
+        <img
+          src="./Images/Vector22.png"
+          alt=""
+          className="absolute top-[310px] right-[1320px]"
+        />
+        <img
+          src="./Images/Vector33.png"
+          alt=""
+          className="absolute top-[400px] w-[190px] right-[590px]"
+        />
 
         <div className="NavBar flex justify-around items-center mt-[30px]">
           <div className="metanext flex cursor-pointer">

@@ -6,14 +6,34 @@ export default function Concat() {
   return (
     <>
       <div className="alll relative ">
-          <img src="./Images/Ellipse 392.png" alt="" className="absolute top-[20px] right-[500px]" />
-          <img src="./Images/Star 6.png" alt="" className="absolute top-[180px] right-[50px]" />
-          <img src="./Images/Ellipse 393.png" alt="" className="absolute top-[670px] right-[650px]" />
-          <img src="./Images/Polygon 6.png" alt="" className="absolute top-[670px]  right-[50px]" />
-          
+        <img
+          src="./Images/Ellipse 392.png"
+          alt=""
+          className="absolute top-[20px] right-[500px]"
+        />
+        <img
+          src="./Images/Star 6.png"
+          alt=""
+          className="absolute top-[180px] right-[50px]"
+        />
+        <img
+          src="./Images/Ellipse 393.png"
+          alt=""
+          className="absolute top-[670px] right-[650px]"
+        />
+        <img
+          src="./Images/Polygon 6.png"
+          alt=""
+          className="absolute top-[670px]  right-[50px]"
+        />
+
         <div className="alllla again flex justify-between items-center mt-[50px] ">
           <div className="right  mx-auto ">
-            <img src="./Images/Frame.png" alt=""  className="mt-[-70px] h-[600px] mr-[-20px]"/>
+            <img
+              src="./Images/Frame.png"
+              alt=""
+              className="mt-[-70px] h-[600px] mr-[-20px]"
+            />
           </div>
           <div className="left w-[550px] m-[50px]  h-[650px] flex flex-col gap-[50px] rounded-3xl bg-[#e1f8f6] ">
             <div className="flex items-center mt-[25px]">
@@ -57,14 +77,16 @@ export default function Concat() {
               <br />
               <TextArea
                 placeholder="موضوع "
-                autoSize={{ minRows: 5  , maxRows: 7 }}
+                autoSize={{ minRows: 5, maxRows: 7 }}
                 className="w-[480px] text-[17px] font-[400] text-[#1E385F]"
               />
             </div>
             <div className="flex justify-center mt-[-15px]">
-                            <button className="flex  shadow-xl bg-[#0CA0A2] rounded-[10px] w-[480px] h-[56px] items-center justify-center ">
-              <p className="text-[15px] font-[500] text-white mr-[5px] ">دریافت مشاوره </p>
-            </button>
+              <button className="flex  shadow-xl bg-[#0CA0A2] rounded-[10px] w-[480px] h-[56px] items-center justify-center ">
+                <p className="text-[15px] font-[500] text-white mr-[5px] ">
+                  دریافت مشاوره{" "}
+                </p>
+              </button>
             </div>
           </div>
         </div>
