@@ -4,7 +4,12 @@ import Options from "../Options/Options";
 export default function   Goal() {
   return (
     <>
-      <div className="all">
+      <div className="all relative">
+      <img src="./Images/Ellipse 399.png" alt="" className="absolute top-[150px] right-[10px] w-[522px] h-[522]" />
+      <img src="./Images/Ellipse 399.png" alt="" className="absolute top-[150px] right-[850px] w-[522px] h-[522]" />
+      <img src="./Images/Ellipse 372.png" alt="" className="absolute top-[250px] right-[1100px] " />
+      <img src="./Images/Polygon 7.png" alt="" className="absolute top-[650px] right-[270px]" />
+
         <div className="vector2-opacity mb-[150px] relative mx-auto w-[555px] h-[718px] rounded-[120px] bg-[#0CA0A2]   mt-[100px] flex flex-col gap-10 items-center justify-center">
           <div className="">
             <h1 className="text-white text-[46px] text-center font-[800] mb-[25px]">هدف ما در متانکست</h1>

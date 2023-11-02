@@ -25,6 +25,20 @@ body{
     z-index: 0;
   }
 
+  .slide {
+    position: absolute;
+    left: -200vw;
+    transition: left 1s;
+  }
+  
+  .slide.active {
+    left: 0;
+  }
+
+  .swiper-slide {
+    direction: rtl;
+  }
+
   .mask::before {
     content: '';
     background:url('./Images/Mask group.png');

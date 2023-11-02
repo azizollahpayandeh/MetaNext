@@ -43,14 +43,14 @@ export default function Hesebdari() {
                     <div className="flex gap-[100px] ">
                       <div className="flex flex-col gap-2 ">
                         <h1 className="text-[#0CA0A2]  text-[30px] font-[800]">
-                          450+
+                        ۴۵۰+
                         </h1>
                         <p className="text-[#0CA0A2] text-[14px]">خرید محصول</p>
                       </div>
 
                       <div className="flex flex-col gap-2">
                         <h1 className="text-[#011627] text-[30px] font-semibold">
-                          320+
+                        ۳۲۰+
                         </h1> 
                         <p className="text-[14px]">کاربر فعال</p>
                       </div>

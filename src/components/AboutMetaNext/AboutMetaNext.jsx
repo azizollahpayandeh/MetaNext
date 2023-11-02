@@ -14,7 +14,12 @@ export default function AboutMetaNext() {
 
 
   return (
-    <div className="alllll">
+    <div className="alllll relative">
+      <img src="./Images/Vector 51.png" alt="" className="absolute top-[-100px] right-[350px]" />
+      <img src="./Images/Ellipse 388.png" alt="" className="absolute top-[50px] right-[40px]" />
+      <img src="./Images/Star 3.png" alt="" className="absolute top-[500px]  right-[300px]" />
+      <img src="./Images/Group 4.png" alt="" className="absolute top-[550px]  right-[80px]" />
+
       <div className="alllll overflow-x-hidden flex justify-around mt-[100px] mb-[50px] relative">
         <div className="right flex flex-col justify-center">
           <p className="text-[#626E94] text-[18px]">

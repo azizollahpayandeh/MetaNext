@@ -15,7 +15,7 @@ export default function SlideCompo({srcImgArr, srcImgPerc, srcImgVideo, styleBg,
         </div>
 
         <div className="text w-[380px] mr-[28px]">
-                <h1 className="text-[30px] font-bold mt-[25px]">آقای علیرضا رودی</h1>
+                <h1 className="text-[30px] font-bold mt-[35px]">آقای علیرضا رودی</h1>
                 <p className="text-[#0CA0A2] text-[20px] mt-[5px]">مدیر عامل ترناو</p>
                 <p className="text-[#626E94] text-[18px] mt-[10px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآ</p>
         </div>

@@ -3,7 +3,11 @@ import React from "react";
 export default function Where() {
   return (
     <>
-      <div className="all flex justify-around mt-[50px]">
+      <div className="all relative flex justify-around mt-[50px]">
+      <img src="./Images/Ellipse 372.png" alt="" className="absolute top-[400px] right-[750px] " />
+      <img src="./Images/Ellipse 387.png" alt="" className="absolute top-[30px] right-[100px] " />
+      <img src="./Images/Polygon 4.png" alt="" className="absolute top-[30px] right-[600px] " />
+
         <div className="right w-[700px] h-[372px] mt-[70px]">
           <h1 className="text-[34px] font-[900]  text-[#011627] ">
             در هر کجایی دنیا که هستی کسب و کارت رو آنلاین مدیریت کن
