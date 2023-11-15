@@ -1,6 +1,19 @@
-import React from "react";
+import React from 'react';
+import { useRecoilState } from 'recoil';
+import { demoState } from '../../RecoilState/RecoilState';
+
+
+
 
 export default function Footer() {
+  const [isDemoFree, setDemoFree] = useRecoilState(demoState);
+
+  const handleDemoClick = () => {
+    // مثلاً تغییر وضعیت دمو رایگان
+    setDemoFree(!isDemoFree);
+    // الان می‌توانید مقدار isDemoFree را در هر جای کد دیگری استفاده کنید
+  };
+
   return (
     <>
       <div className="all">
@@ -201,7 +214,7 @@ export default function Footer() {
                 دریافت دمو رایگان
               </h1>
 
-              <button className="flex shadow-xl ml-[50px]  bg-[#ffff]  rounded-[10px] w-[227px] h-[76px] items-center justify-center cursor-pointer  ">
+              <button onClick={handleDemoClick} className="flex shadow-xl ml-[50px]  bg-[#ffff]  rounded-[10px] w-[227px] h-[76px] items-center justify-center cursor-pointer  ">
                 <img
                   src="./Images/presention-chart.png"
                   alt=""

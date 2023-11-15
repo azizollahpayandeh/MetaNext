@@ -1,6 +1,14 @@
 import React from "react";
+import { useRecoilState } from 'recoil';
+import { readingTimeState } from '../../RecoilState/RecoilState'; 
 
 export default function BlogSlideCompo({ srcImgBase }) {
+  const [readingTime, setReadingTime] = useRecoilState(readingTimeState);
+
+  const updateReadingTime = (newTime) => {
+    setReadingTime(newTime);
+  };
+  
   return (
     <>
       <div className="alll w-[380px] h-[550px] shadow-md bg-[#fefffc]  rounded-3xl border border-[#f5f5f4]">
@@ -13,7 +21,7 @@ export default function BlogSlideCompo({ srcImgBase }) {
             <p className="text-[#0CA0A2] text-[18px] font-[500]">کسب و کار</p>
           </div>
           <div className="text w-[300px]">
-            <h1 className="text-[#000000] text-[24px] font-[600 font-[600]  mt-[20px]">
+            <h1 className="text-[#000000] text-[24px] font-[600]  mt-[20px]">
               چگونه از راه دوره هم میتونیم کسب و کار خودمون رو مدیریت کنیم
             </h1>
           </div>
@@ -25,7 +33,7 @@ export default function BlogSlideCompo({ srcImgBase }) {
                 className="w-[17px] h-[17px]"
               />
               <p className="text-[#7E8AAB] text-[14px] font-[400]">
-                مدت زمان مطالعه: 2 دقیقه
+              مدت زمان مطالعه:{readingTime} 
               </p>
             </div>
             <div className="left flex  gap-1">

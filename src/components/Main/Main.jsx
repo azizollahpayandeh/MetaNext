@@ -1,6 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { isLoggedInState } from "../../RecoilState/RecoilState";
 
 export default function Main() {
+  const [isLoggedIn, setLoggedIn] = useRecoilState(isLoggedInState);
+
   return (
     <>
       <div className="all">
@@ -35,14 +40,19 @@ export default function Main() {
               alt=""
               className="w-[150px] h-[12px] ml-[20px]"
             />
-            <button className="w-[257px] h-[67px] bg-[#011627] transition-all duration-700 rounded-[10px] text-[18px] text-[#FFFFFF]  flex justify-center items-center font-[500] ">
-              رایگان شروع کنید
-              <img
-                src="./Images/arrow-left.png"
-                alt=""
-                className="w-[24px]   mt-[3px] mr-[5px]"
-              />
-            </button>
+            <Link to="/login">
+              <button
+                onClick={() => setLoggedIn(true)}
+                className="w-[257px] h-[67px] bg-[#011627] transition-all duration-700 rounded-[10px] text-[18px] text-[#FFFFFF]  flex justify-center items-center font-[500] "
+              >
+                رایگان شروع کنید
+                <img
+                  src="./Images/arrow-left.png"
+                  alt=""
+                  className="w-[24px]   mt-[3px] mr-[5px]"
+                />
+              </button>
+            </Link>
             <img
               src="./Images/Vector 32 (1).png"
               alt=""

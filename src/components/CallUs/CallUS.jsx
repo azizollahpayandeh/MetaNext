@@ -1,6 +1,10 @@
 import React from "react";
-import "./CallUS";
+import { useRecoilValue } from 'recoil';
+import { phoneNumberState } from '../../RecoilState/RecoilState'; // مسیر فایل recoilState.js را بر اساس نیاز به‌روزرسانی کنید
+
 export default function CallUS() {
+  const phoneNumber = useRecoilValue(phoneNumberState);
+
   return (
     <>
       <div className="relative">
@@ -14,7 +18,8 @@ export default function CallUS() {
               />
               <div className="titleTextConcat mr-[20px]">
                 <h1 className="text-[34px] font-[800] ">
-                  دریافت <span className="text-[#0CA0A2]">مشاوره رایگان</span>
+                  دریافت{" "}
+                  <span className="text-[#0CA0A2]">مشاوره رایگان</span>
                 </h1>
                 <p className="text-[15px] text-[#626E94] font-[400] mt-[10px]">
                   در تمامی روز های هفته 24 ساعته در خدمتیم
@@ -23,7 +28,9 @@ export default function CallUS() {
             </div>
 
             <div>
-              <h1 className="font-[700] text-[40px]  ml-[40px]">09152663045</h1>
+              <h1 className="font-[700] text-[40px]  ml-[40px]">
+                {phoneNumber}
+              </h1>
             </div>
           </div>
         </div>

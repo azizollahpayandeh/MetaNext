@@ -1,26 +1,12 @@
 import React from "react";
+import { useRecoilState } from 'recoil';
+import { imageListState } from '../../RecoilState/RecoilState'; // مسیر فایل recoilState.js را بر اساس نیاز به‌روزرسانی کنید
+
 
 export default function Application() {
-  const imageList22 = [
-    {
-      src: "./Images/Group 70223.png",
-      alt: "",
-      top: "-50px",
-      right: "425px",
-    },
-    {
-      src: "./Images/Group 70224.png",
-      alt: "",
-      top: "-50px",
-      right: "50px",
-    },
-    {
-      src: "./Images/Group 70222.png",
-      alt: "",
-      top: "300px",
-      right: "200px",
-    },
-  ];
+
+  const [imageList, setImageList] = useRecoilState(imageListState);
+
   return (
     <>
       <div className="system flex justify-between mt-[100px] mr-[50px]">
@@ -102,7 +88,7 @@ export default function Application() {
             className="mt-[-30px] rounded-xl"
           />
 
-          {imageList22.map((image, index) => (
+          {imageList.map((image, index) => (
             <img
               key={index}
               src={image.src}

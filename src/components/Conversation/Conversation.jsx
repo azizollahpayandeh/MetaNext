@@ -1,28 +1,21 @@
 import React from "react";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { productPurchaseCountState, activeUserCountState, imageListState } from "../../RecoilState/RecoilState";
+
 
 export default function Conversation() {
-  const imageList22 = [
-    {
-      src: "./Images/Group 70223.png",
-      alt: "",
-      top: "-50px",
-      right: "425px",
-    },
-    {
-      src: "./Images/Group 70224.png",
-      alt: "",
-      top: "-50px",
-      right: "50px",
-    },
-    {
-      src: "./Images/Group 70222.png",
-      alt: "",
-      top: "300px",
-      right: "200px",
-    },
-  ];
+
+  const [productPurchaseCount, setProductPurchaseCount] = useRecoilState(productPurchaseCountState);
+  const [activeUserCount, setActiveUserCount] = useRecoilState(activeUserCountState);
+  const blogImagesConversation = useRecoilValue(imageListState);
+
+  const updateCounts = () => {
+    setProductPurchaseCount(productPurchaseCount + 1);
+    setActiveUserCount(activeUserCount + 1);
+  };
+
   return (
-    <>
+    <>  
       <div className="system flex justify-between mt-[100px] mr-[50px]">
         <div className="w-[620px] h-[370px]">
           <h1 className="text-[40px] font-[800] mb-[20px]">
@@ -42,13 +35,13 @@ export default function Conversation() {
             />
             <div className="flex gap-[100px] ">
               <div className="flex flex-col gap-2 ">
-                <h1 className="text-[#0CA0A2]  text-[30px] font-[800]">۴۵۰+</h1>
-                <p className="text-[#0CA0A2] text-[14px]">خرید محصول</p>
+                <h1 className="text-[#0CA0A2]  text-[30px] font-[800]">{productPurchaseCount}+</h1>
+                <p className="text-[#0CA0A2] text-[14px]"> محصول</p>
               </div>
 
               <div className="flex flex-col gap-2">
                 <h1 className="text-[#011627] text-[30px] font-semibold">
-                  ۳۲۰+
+                  {activeUserCount}+
                 </h1>
                 <p className="text-[14px]">کاربر فعال</p>
               </div>
@@ -102,7 +95,7 @@ export default function Conversation() {
             className="mt-[-30px] rounded-xl"
           />
 
-          {imageList22.map((image, index) => (
+          {blogImagesConversation.map((image, index) => (
             <img
               key={index}
               src={image.src}

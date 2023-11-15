@@ -1,14 +1,25 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import SlideCompo from "../SlideCompo/SlideCompo";
+import { useRecoilState, useSetRecoilState } from "recoil";
+import { isBlockState, slideArrState } from "./../../RecoilState/RecoilState";
 
 export default function AboutMetaNext() {
-  const [isBlock, setIsBlock] = useState("");
+  const setSlideArr = useSetRecoilState(slideArrState);
+  const [isBlock, setIsBlock] = useRecoilState(isBlockState);
   const swiperRef = useRef(null);
+
+  setSlideArr({
+    srcImgArr: "./Images/arrow-up-right.png",
+    srcImgPerc: "./Images/+90%.png",
+    srcImgVideo: "./Images/Rectangle 9188.png",
+    styleBg: "bg-[#FF9F1C1A]",
+    textColor: "text-orange-400",
+  });
 
   return (
     <div className="alllll relative">
@@ -36,10 +47,10 @@ export default function AboutMetaNext() {
       <div className="alllll overflow-x-hidden flex justify-around mt-[100px] mb-[50px] relative">
         <div className="right flex flex-col justify-center">
           <p className="text-[#626E94] text-[18px]">
-            تجربه مدیراین کسب و کاری که به ما اعتماد کردن
+            تجربه مدیران کسب و کارهایی که به ما اعتماد کردن
           </p>
           <h1 className="text-[40px] font-bold w-[316px] h-[145px] mt-[20px]">
-            در مورد <span className="text-[#0CA0A2]">متانکست</span> چه میشنویم?
+            در مورد <span className="text-[#0CA0A2]">متانکست</span> چه می‌شنویم؟
           </h1>
           <div className="buttons flex gap-6 items-center">
             <img
@@ -93,73 +104,26 @@ export default function AboutMetaNext() {
             >
               <SwiperSlide>
                 <div className="slideBox">
-                  <SlideCompo
-                    srcImgArr="./Images/arrow-up-right.png"
-                    srcImgPerc="./Images/+90%.png"
-                    srcImgVideo="./Images/Rectangle 9188.png"
-                    styleBg="bg-[#FF9F1C1A]"
-                    textColor="text-orange-400"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slideBox ">
-                  <SlideCompo
-                    srcImgArr="./Images/arrow-up-right (2).png"
-                    srcImgVideo="./Images/Rectangle 9188 (2).png"
-                    srcImgPerc="./Images/+98%.png"
-                    styleBg="bg-[#35D5A51A]"
-                    textColor="text-green-400"
-                  />
+                  <SlideCompo />
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="slideBox ">
-                  <SlideCompo
-                    srcImgArr="./Images/arrow-up-right.png"
-                    srcImgPerc="./Images/+90%.png"
-                    srcImgVideo="./Images/Rectangle 9188.png"
-                    styleBg="bg-[#FF9F1C1A]"
-                    textColor="text-orange-400"
-                  />
+                <div className="slideBox">
+                  <SlideCompo />
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="slideBox ">
-                  <SlideCompo
-                    srcImgArr="./Images/arrow-up-right (2).png"
-                    srcImgVideo="./Images/Rectangle 9188 (2).png"
-                    srcImgPerc="./Images/+98%.png"
-                    styleBg="bg-[#35D5A51A]"
-                    textColor="text-green-400"
-                  />
+                <div className="slideBox">
+                  <SlideCompo />
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="slideBox ">
-                  <SlideCompo
-                    srcImgArr="./Images/arrow-up-right.png"
-                    srcImgPerc="./Images/+90%.png"
-                    srcImgVideo="./Images/Rectangle 9188.png"
-                    styleBg="bg-[#FF9F1C1A]"
-                    textColor="text-orange-400"
-                  />
-                </div>{" "}
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="slideBox ">
-                  <SlideCompo
-                    srcImgArr="./Images/arrow-up-right (2).png"
-                    srcImgVideo="./Images/Rectangle 9188 (2).png"
-                    srcImgPerc="./Images/+98%.png"
-                    styleBg="bg-[#35D5A51A]"
-                    textColor="text-green-400"
-                  />
-                </div>{" "}
+                <div className="slideBox">
+                  <SlideCompo />
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>

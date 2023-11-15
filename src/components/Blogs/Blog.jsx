@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { useRecoilState, useRecoilValue } from 'recoil';
 import { Autoplay, Pagination } from "swiper/modules";
 import BlogSlideCompo from "../BlogSlidCompo/BlogSlideCompo";
-
+import { isBlockState, blogImagesState } from '../../RecoilState/RecoilState';  
 import { Navigation } from "swiper/modules";
 
 import "swiper/css";
@@ -12,7 +12,8 @@ import "swiper/css/navigation";
 
 export default function Blog() {
   const swiperRef = useRef(null);
-  const [isBlock, setIsBlock] = useState("");
+  const [isBlock, setIsBlock] = useRecoilState(isBlockState);
+  const blogImages = useRecoilValue(blogImagesState);
 
   return (
     <>
@@ -71,63 +72,31 @@ export default function Blog() {
           </div>
 
           <div className="slider mt-[60px] mr-[50px]">
-            <Swiper
-              ref={swiperRef}
-              navigation={{
-                prevEl: ".prevEl",
-                nextEl: ".nextEl",
-              }}
-              // pagination={{
-              //   clickable: true,
-              //   enabled: true,
-              // }}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: true,
-              }}
-              modules={[Navigation, Autoplay, Pagination]}
-              className="mySwiper"
-              spaceBetween={30}
-              slidesPerView={3}
-              loop={true}
-            >
-              <SwiperSlide>
-                <div className="boxSlide">
-                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194.png" />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="boxSlide">
-                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (1).png" />
-                </div>{" "}
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="boxSlide">
-                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (2).png" />
-                </div>{" "}
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="boxSlide">
-                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194.png" />
-                </div>{" "}
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="boxSlide">
-                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (1).png" />
-                </div>{" "}
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="boxSlide">
-                  <BlogSlideCompo srcImgBase="./Images/Rectangle 9194 (2).png" />
-                </div>{" "}
-              </SwiperSlide>
-            </Swiper>
-          </div>
+        <Swiper
+          ref={swiperRef}
+          navigation={{
+            prevEl: ".prevEl",
+            nextEl: ".nextEl",
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: true,
+          }}
+          modules={[Navigation, Autoplay, Pagination]}
+          className="mySwiper"
+          spaceBetween={30}
+          slidesPerView={3}
+          loop={true}
+        >
+          {blogImages.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="boxSlide">
+                <BlogSlideCompo srcImgBase={src} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
         </div>
       </div>
     </>
